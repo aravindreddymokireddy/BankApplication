@@ -1,0 +1,72 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div style="text-align: center">
+    <!-- <h1>{{message}}</h1>-->
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <fieldset>
+
+                    <div class="form-group">
+                        <tr>
+                            <td><label for="Name"><span class="req"></span> Sender AccountNo: </label>
+                            </td>
+                            <td><input type="text" value="{{localSender.sAccNo}}" name="name" id="name"
+                                    class="form-control phone" maxlength="28" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Name"><span class="req"></span> Sender Name: </label>
+                            </td>
+                            <td><input required type="text" value="{{localSender.sName}}" name="name" id="name"
+                                    class="form-control phone" maxlength="28" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="Name"><span class="req"></span> Balance: </label>
+                            </td>
+                            <td><input required type="text" value="{{localSender.balance}}" name="name" id="name"
+                                    class="form-control phone" maxlength="28" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="Name"><span class="req"></span> OverDraft: </label>
+                            </td>
+                            <td><input required type="text" value="{{localSender.od}}" name="name" id="name"
+                                    class="form-control phone" maxlength="28" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="Name"><span class="req"></span> Enter Amount: </label>
+                            </td>
+                            <td><input required type="text" value="" name="name" id="name" class="form-control phone"
+                                    maxlength="28" />
+                            </td>
+                        </tr>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="firstname"><span class="req">* </span> Password: </label>
+                        <input class="form-control" type="text" name="password" id="txt" required
+                            placeholder="Enter password" />
+                        <div id="errFirst"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="btn btn-success" type="submit" name="submit_reg" value="Submitt">
+                    </div>
+                </fieldset>
+            </form><!-- ends register form -->
+            <!-- second for to fiter user-->
+        </div><!-- ends col-6 -->
+
+    </div>
+</div>

@@ -12,6 +12,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SenderComponentComponent } from './sender-component/sender-component.component';
 import { ReceiverComponentComponent } from './receiver-component/receiver-component.component';
 import { TransferComponentComponent } from './transfer-component/transfer-component.component';
+import { HomeComponentComponent } from './home-component/home-component.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { TransferComponentComponent } from './transfer-component/transfer-compon
     DashboardComponent,
     SenderComponentComponent,
     ReceiverComponentComponent,
-    TransferComponentComponent
+    TransferComponentComponent,
+    HomeComponentComponent
   ],
   imports: [
     BrowserModule,

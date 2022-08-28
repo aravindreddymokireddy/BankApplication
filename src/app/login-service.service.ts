@@ -16,7 +16,7 @@ export class LoginServiceService {
 
   public checkBankEmployee(user:LoginUser){
 
-  const loginURL:String ="http://localhost:2511/loginUser?userName="
+  const loginURL:String ="http://localhost:8081/login?userName="
   +user.userName+"&password="+user.password;
   //const loginURL:String ="http://localhost:8080/";
 
@@ -48,7 +48,7 @@ console.log(loginURL);
 
     public crossCheckSendAccount(account:number){
     
-      let res = this.dbsHttp.get("http://localhost:2511/sender?accountNo="+account);
+      let res = this.dbsHttp.get("http://localhost:8081/sender?accountNo="+account);
       res.subscribe((data)=>{
         console.log(data);
         this.resSender = data;
@@ -73,7 +73,7 @@ enderName:any;
     public checkBlockList(recName:String){
       const senderName =  localStorage.getItem("sender");
      
-      let res = this.dbsHttp.get("http://localhost:2511/receiver?receiverName="+
+      let res = this.dbsHttp.get("http://localhost:8081/receiver?receiverName="+
      recName+"&"+"senderAccountNo="+senderName);
     
       //let res = this.dbsHttp.get("http://localhost:8080/receiver?receiverName="+recName);

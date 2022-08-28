@@ -29,7 +29,6 @@ export class LoginComponentComponent implements OnInit {
     console.log("user details");
     console.log(this.dbsUser);
     this.loginService.checkBankEmployee(this.dbsUser);
-   
   }
 
 }
